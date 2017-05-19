@@ -1,20 +1,31 @@
 require 'google/cloud/bigquery'
 
 class WeatherRepo
-  attr_reader :bigquery
+  attr_reader :bigquery, :dataset, :table
 
-  # Setup connection to repo
-  #  e.g., repo = WeatherRepo.new(app.settings.config)
-  def initialize(config)
-    @bigquery = Google::Cloud::Bigquery.new project: config.BIGQUERY_PROJECT
+  module Error
+    class NoConnection < StandardError; end
   end
 
-  # Stream a single record to BigQuery
-  #  e.g., result = repo.save 'test_dataset', 'test_table', {'ahead' => 0, 'summary' => 'rainy days ahead'}
-  def save(dataset_name, table_name, params)
-    dataset = @bigquery.dataset dataset_name
-    table = dataset.table table_name
-    table.insert params
+  # Setup connection to repo with either configured or specified parameters
+  #  e.g., repo = WeatherRepo.new(config: app.settings.config)
+  #        repo = WeatherRepo.new(project: 'prj', dataset: 'dset', table: 'tab')
+  def initialize(config: nil, project: nil, dataset: nil, table: nil)
+    project ||= config.BIGQUERY_PROJECT
+    dataset ||= config.BIGQUERY_DATASET
+    table ||= config.BIGQUERY_TABLE
+
+    @bigquery = Google::Cloud::Bigquery.new(project: project) if project
+    @dataset = @bigquery&.dataset(dataset) if dataset
+    @table = @dataset&.table(table) if table
+  rescue
+    raise Error::NoConnection, 'Could not connect to BigQuery'
+  end
+
+  # Streaming save to BigQuery
+  #  e.g., result = repo.save(ahead: 0, summary: 'good days ahead')
+  def save(params)
+    @table.insert params
   end
 
   def create_dataset(dataset_name)
@@ -27,7 +38,8 @@ class WeatherRepo
 
     table = dataset.create_table table_name do |schema|
       schema.integer 'ahead'
-      schema.date 'time'
+      schema.date 'date'
+      schema.time 'time'
       schema.string 'summary'
       schema.string 'icon'
       schema.timestamp 'sunriseTime'
