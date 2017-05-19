@@ -1,58 +1,62 @@
 require 'google/cloud/bigquery'
 
 class WeatherRepo
-  def self.save(dataset_name, table_name, params)
-    dataset = BIGQUERY.dataset dataset_name
+  attr_reader :bigquery
+
+  # Setup connection to repo
+  #  e.g., repo = WeatherRepo.new(app.settings.config)
+  def initialize(config)
+    @bigquery = Google::Cloud::Bigquery.new project: config.BIGQUERY_PROJECT
+  end
+
+  # Stream a single record to BigQuery
+  #  e.g., result = repo.save 'test_dataset', 'test_table', {'ahead' => 0, 'summary' => 'rainy days ahead'}
+  def save(dataset_name, table_name, params)
+    dataset = @bigquery.dataset dataset_name
     table = dataset.table table_name
-
-    row = {}
-    params.keys.each do |key|
-      row[key] = params[key]
-    end
-
-    table.insert row
+    table.insert params
   end
 
-  def self.create_dataset(dataset_name)
-    dataset = BIGQUERY.create_dataset dataset_name
-    puts "Dataset #{dataset.dataset_id} created."
+  def create_dataset(dataset_name)
+    dataset = @bigquery.create_dataset dataset_name
+    dataset.tap { |d| puts "Dataset #{d.dataset_id} created." }
   end
 
-  def self.create_table(dataset_name, table_name)
-    dataset = BIGQUERY.dataset dataset_name
+  def create_table(dataset_name, table_name)
+    dataset = @bigquery.dataset dataset_name
 
     table = dataset.create_table table_name do |schema|
-      schema.integer 'ahead', mode: :required
-      schema.date 'time', mode: :required
-      schema.string 'summary', mode: :required
-      schema.string 'icon', mode: :required
-      schema.timestamp 'sunriseTime', mode: :required
-      schema.timestamp 'sunsetTime', mode: :required
-      schema.float 'moonPhase', mode: :required
-      schema.float 'precipIntensity', mode: :required
-      schema.float 'precipIntensityMax', mode: :required
-      schema.timestamp 'precipIntensityMaxTime', mode: :required
-      schema.float 'precipProbability', mode: :required
-      schema.string 'precipType', mode: :required
-      schema.float 'temperatureMin', mode: :required
-      schema.timestamp 'temperatureMinTime', mode: :required
-      schema.float 'temperatureMax', mode: :required
-      schema.timestamp 'temperatureMaxTime', mode: :required
-      schema.float 'apparentTemperatureMin', mode: :required
-      schema.timestamp 'apparentTemperatureMinTime', mode: :required
-      schema.float 'apparentTemperatureMax', mode: :required
-      schema.timestamp 'apparentTemperatureMaxTime', mode: :required
-      schema.float 'dewPoint', mode: :required
-      schema.float 'humidity', mode: :required
-      schema.float 'windSpeed', mode: :required
-      schema.integer 'windBearing', mode: :required
-      schema.string 'visibility', mode: :required
-      schema.float 'cloudCover', mode: :required
-      schema.float 'pressure', mode: :required
-      schema.float 'ozone', mode: :required
-      schema.string 'restaurant_name', mode: :nullable
+      schema.integer 'ahead'
+      schema.date 'time'
+      schema.string 'summary'
+      schema.string 'icon'
+      schema.timestamp 'sunriseTime'
+      schema.timestamp 'sunsetTime'
+      schema.float 'moonPhase'
+      schema.float 'precipIntensity'
+      schema.float 'precipIntensityMax'
+      schema.timestamp 'precipIntensityMaxTime'
+      schema.float 'precipProbability'
+      schema.string 'precipType'
+      schema.float 'temperatureMin'
+      schema.timestamp 'temperatureMinTime'
+      schema.float 'temperatureMax'
+      schema.timestamp 'temperatureMaxTime'
+      schema.float 'apparentTemperatureMin'
+      schema.timestamp 'apparentTemperatureMinTime'
+      schema.float 'apparentTemperatureMax'
+      schema.timestamp 'apparentTemperatureMaxTime'
+      schema.float 'dewPoint'
+      schema.float 'humidity'
+      schema.float 'windSpeed'
+      schema.integer 'windBearing'
+      schema.string 'visibility'
+      schema.float 'cloudCover'
+      schema.float 'pressure'
+      schema.float 'ozone'
+      schema.string 'restaurant_name'
     end
 
-    puts "Table #{table.table_id} created."
+    table.tap { |t| puts "Table #{t.table_id} created." }
   end
 end

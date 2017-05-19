@@ -1,6 +1,8 @@
 require 'sinatra'
-require 'google/cloud/bigquery'
 
-configure do
-  BIGQUERY = Google::Cloud::Bigquery.new project: 'nthu-weather-weaver-repo'
+configure :development do
+  def reload!
+    # Tux reloading tip: https://github.com/cldwalker/tux/issues/3
+    exec $PROGRAM_NAME, *ARGV
+  end
 end
