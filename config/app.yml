@@ -1,0 +1,26 @@
+---
+locations:
+  - loc_id: TPE1
+    latitude: 25.0402779
+    longitude: 121.5301837
+  - loc_id: TPE2
+    latitude: 25.0457906
+    longitude: 121.5439521
+  - loc_id: TPE3
+    latitude: 25.0563448
+    longitude: 121.5405553
+  - loc_id: TPE4
+    latitude: 25.0536751
+    longitude: 121.5556621
+  - loc_id: TY1
+    latitude: 24.9632927
+    longitude: 121.2299855
+  - loc_id: HSC1
+    latitude: 24.784571
+    longitude: 121.018409
+  - loc_id: KH1
+    latitude: 22.5827675
+    longitude: 120.3297366
+  - loc_id: KH2
+    latitude: 22.6630247
+    longitude: 120.3114376
