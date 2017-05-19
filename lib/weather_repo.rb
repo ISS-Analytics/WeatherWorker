@@ -22,6 +22,7 @@ class WeatherRepo
     dataset = BIGQUERY.dataset dataset_name
 
     table = dataset.create_table table_name do |schema|
+      schema.integer 'ahead', mode: :required
       schema.date 'time', mode: :required
       schema.string 'summary', mode: :required
       schema.string 'icon', mode: :required
