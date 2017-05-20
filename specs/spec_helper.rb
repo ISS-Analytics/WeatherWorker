@@ -1,9 +1,14 @@
 # frozen_string_literal: true
-require 'econfig'
+
+ENV['APP_ENV'] = 'test'
+
+require './init.rb'
 require 'minitest/autorun'
-require_relative '../lib/init.rb'
+require 'minitest/rg'
 
+def app
+  WeatherWeaverAPI
+end
 
-extend Econfig::Shortcut
-Econfig.env = 'development'
-Econfig.root = File.expand_path('../../', File.expand_path(__FILE__))
+CONFIG = app.settings.config
+FORECASTS_FIXTURE = YAML.safe_load(File.read('specs/fixtures/forecast.yml'))
