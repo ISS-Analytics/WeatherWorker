@@ -1,5 +1,6 @@
 require 'google/cloud/bigquery'
 
+# Repository class for BigQuery
 class WeatherRepo
   attr_reader :bigquery, :dataset, :table
 
@@ -69,7 +70,6 @@ class WeatherRepo
       schema.float      'cloudCover'
       schema.float      'pressure'
       schema.float      'ozone'
-      schema.string     'restaurant_name'
     end
 
     table.tap { |t| puts "Table #{t.table_id} created." }
