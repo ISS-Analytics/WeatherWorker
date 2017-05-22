@@ -6,3 +6,9 @@ configure :development do
     exec $PROGRAM_NAME, *ARGV
   end
 end
+
+configure do
+  DB_SCHEMA = YAML.safe_load(
+    File.read("#{File.dirname(__FILE__)}/../db/schema.yml")
+  )
+end

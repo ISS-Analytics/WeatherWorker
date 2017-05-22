@@ -24,7 +24,10 @@ class WeatherOracle
     class NoConnection < StandardError; end
   end
 
-  def initialize(api_key)
+  # Initialize future requests to DarkSky API using key
+  # example:
+  #   oracle = WeatherOracle.new(api_key: app.settings.config.DARKSKY_API_KEY)
+  def initialize(api_key:)
     @route = [DARKSKY_API_URL, api_key].join('/')
   rescue
     raise Error::NoConnection, 'Not enough parameters to establish connection'

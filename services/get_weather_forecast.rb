@@ -2,11 +2,8 @@
 
 # Service object to get and parse weather information for a given location
 class GetWeatherForecast
-  DARKSKY_API_URL = 'https://api.darksky.net/forecast'
-
-  def initialize(config, oracle = nil)
-    oracle ||= WeatherOracle
-    @oracle = oracle.new(config.DARKSKY_API_KEY)
+  def initialize(oracle)
+    @oracle = oracle
   end
 
   # Return processed forecast given a location
@@ -15,8 +12,9 @@ class GetWeatherForecast
   #                  {latitude: '12.21', longitude: '121.21'}
   #                  {'latitude' => 12.21, 'longitude' => 121.21 }
   # Example:
-  #   GetWeatherForecast.new(app.settings.config)
-  #                     .call(app.settings.config.LOCATIONS.first)
+  #   oracle = WeatherOracle.new(app.settings.config.DARKSKY_API_KEY)
+  #   forecast = GetWeatherForecast.new(oracle)
+  #                                .call(app.settings.config.LOCATIONS.first)
   def call(location_hash)
     forecasts = @oracle.get_forecast(location_hash)
     process_forecasts(forecasts)
@@ -31,10 +29,6 @@ class GetWeatherForecast
       time_forecast['data'].each.with_index do |forecast, index|
         forecast['ahead'] = index
         copy_over(forecasts, forecast, %w[latitude longitude timezone offset])
-        time_keys = forecast.keys.select { |key| key.match?(/[Tt]ime$/) }
-        time_keys.each do |time_key|
-          forecast[time_key] = Time.at(forecast[time_key].to_i).to_s
-        end
       end
     end
 

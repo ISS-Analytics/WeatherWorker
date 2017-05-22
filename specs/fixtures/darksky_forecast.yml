@@ -1,0 +1,998 @@
+---
+latitude: 25.0402779
+longitude: 121.5301837
+timezone: Asia/Taipei
+offset: 8
+currently:
+  time: 1495477695
+  summary: Clear
+  icon: clear-night
+  precipIntensity: 0
+  precipProbability: 0
+  temperature: 75.9
+  apparentTemperature: 75.9
+  dewPoint: 70.57
+  humidity: 0.84
+  windSpeed: 3.36
+  windBearing: 111
+  visibility: 6.21
+  cloudCover: 0.1
+  pressure: 1007.12
+  ozone: 290.07
+hourly:
+  summary: Partly cloudy tomorrow night.
+  icon: partly-cloudy-night
+  data:
+  - time: 1495476000
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 75.26
+    apparentTemperature: 75.26
+    dewPoint: 69.94
+    humidity: 0.84
+    windSpeed: 3.37
+    windBearing: 110
+    visibility: 6.21
+    cloudCover: 0.1
+    pressure: 1007.05
+    ozone: 290.26
+  - time: 1495479600
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 76.62
+    apparentTemperature: 76.62
+    dewPoint: 71.28
+    humidity: 0.84
+    windSpeed: 3.35
+    windBearing: 111
+    visibility: 6.21
+    cloudCover: 0.1
+    pressure: 1007.2
+    ozone: 289.86
+  - time: 1495483200
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 76.4
+    apparentTemperature: 76.4
+    dewPoint: 71.11
+    humidity: 0.84
+    windSpeed: 3.23
+    windBearing: 113
+    visibility: 6.21
+    cloudCover: 0.09
+    pressure: 1007.41
+    ozone: 289.46
+  - time: 1495486800
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 76.47
+    apparentTemperature: 76.47
+    dewPoint: 71.2
+    humidity: 0.84
+    windSpeed: 2.89
+    windBearing: 116
+    visibility: 6.21
+    cloudCover: 0.08
+    pressure: 1007.68
+    ozone: 289.15
+  - time: 1495490400
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 77.12
+    apparentTemperature: 77.12
+    dewPoint: 71.55
+    humidity: 0.83
+    windSpeed: 2.21
+    windBearing: 123
+    visibility: 6.21
+    cloudCover: 0.06
+    pressure: 1008.13
+    ozone: 289
+  - time: 1495494000
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 78.16
+    apparentTemperature: 78.16
+    dewPoint: 71.73
+    humidity: 0.81
+    windSpeed: 1.32
+    windBearing: 144
+    visibility: 6.21
+    cloudCover: 0.04
+    pressure: 1008.55
+    ozone: 288.94
+  - time: 1495497600
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 79.46
+    apparentTemperature: 79.46
+    dewPoint: 71.03
+    humidity: 0.76
+    windSpeed: 2.08
+    windBearing: 253
+    cloudCover: 0
+    pressure: 1009.14
+    ozone: 288.86
+  - time: 1495501200
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 81.09
+    apparentTemperature: 85.18
+    dewPoint: 71.3
+    humidity: 0.72
+    windSpeed: 2.84
+    windBearing: 271
+    cloudCover: 0.01
+    pressure: 1009.17
+    ozone: 288.72
+  - time: 1495504800
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 82.99
+    apparentTemperature: 88.11
+    dewPoint: 71.77
+    humidity: 0.69
+    windSpeed: 3.68
+    windBearing: 283
+    cloudCover: 0.02
+    pressure: 1009.11
+    ozone: 288.56
+  - time: 1495508400
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0008
+    precipProbability: 0.01
+    precipType: rain
+    temperature: 84.61
+    apparentTemperature: 90.67
+    dewPoint: 72.28
+    humidity: 0.67
+    windSpeed: 4.22
+    windBearing: 289
+    cloudCover: 0.05
+    pressure: 1008.94
+    ozone: 288.42
+  - time: 1495512000
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0013
+    precipProbability: 0.02
+    precipType: rain
+    temperature: 85.61
+    apparentTemperature: 92.44
+    dewPoint: 72.8
+    humidity: 0.66
+    windSpeed: 4.14
+    windBearing: 291
+    cloudCover: 0.11
+    pressure: 1008.6
+    ozone: 288.27
+  - time: 1495515600
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0019
+    precipProbability: 0.04
+    precipType: rain
+    temperature: 86.03
+    apparentTemperature: 93.34
+    dewPoint: 73.19
+    humidity: 0.66
+    windSpeed: 3.67
+    windBearing: 290
+    cloudCover: 0.18
+    pressure: 1008.15
+    ozone: 288.14
+  - time: 1495519200
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0023
+    precipProbability: 0.06
+    precipType: rain
+    temperature: 86.01
+    apparentTemperature: 93.47
+    dewPoint: 73.36
+    humidity: 0.66
+    windSpeed: 3.26
+    windBearing: 291
+    cloudCover: 0.23
+    pressure: 1007.7
+    ozone: 288.15
+  - time: 1495522800
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0024
+    precipProbability: 0.07
+    precipType: rain
+    temperature: 85.62
+    apparentTemperature: 92.9
+    dewPoint: 73.32
+    humidity: 0.67
+    windSpeed: 3.19
+    windBearing: 294
+    cloudCover: 0.22
+    pressure: 1007.23
+    ozone: 288.48
+  - time: 1495526400
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0023
+    precipProbability: 0.06
+    precipType: rain
+    temperature: 84.89
+    apparentTemperature: 91.75
+    dewPoint: 73.15
+    humidity: 0.68
+    windSpeed: 3.17
+    windBearing: 297
+    cloudCover: 0.2
+    pressure: 1006.79
+    ozone: 288.94
+  - time: 1495530000
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0021
+    precipProbability: 0.05
+    precipType: rain
+    temperature: 84
+    apparentTemperature: 90.37
+    dewPoint: 73
+    humidity: 0.7
+    windSpeed: 2.75
+    windBearing: 300
+    cloudCover: 0.17
+    pressure: 1006.56
+    ozone: 289.13
+  - time: 1495533600
+    summary: Clear
+    icon: clear-day
+    precipIntensity: 0.0017
+    precipProbability: 0.04
+    precipType: rain
+    temperature: 82.96
+    apparentTemperature: 88.85
+    dewPoint: 72.97
+    humidity: 0.72
+    windSpeed: 1.39
+    windBearing: 303
+    cloudCover: 0.14
+    pressure: 1006.54
+    ozone: 288.75
+  - time: 1495537200
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0.0011
+    precipProbability: 0.02
+    precipType: rain
+    temperature: 81.82
+    apparentTemperature: 87.09
+    dewPoint: 72.94
+    humidity: 0.75
+    windSpeed: 0.37
+    windBearing: 104
+    cloudCover: 0.12
+    pressure: 1006.69
+    ozone: 288.09
+  - time: 1495540800
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0.0008
+    precipProbability: 0.01
+    precipType: rain
+    temperature: 80.76
+    apparentTemperature: 85.35
+    dewPoint: 72.83
+    humidity: 0.77
+    windSpeed: 1.34
+    windBearing: 118
+    cloudCover: 0.11
+    pressure: 1006.87
+    ozone: 287.57
+  - time: 1495544400
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 79.87
+    apparentTemperature: 79.87
+    dewPoint: 72.62
+    humidity: 0.79
+    windSpeed: 0.91
+    windBearing: 128
+    cloudCover: 0.12
+    pressure: 1007.15
+    ozone: 287.39
+  - time: 1495548000
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 79.11
+    apparentTemperature: 79.11
+    dewPoint: 72.41
+    humidity: 0.8
+    windSpeed: 0.51
+    windBearing: 245
+    cloudCover: 0.14
+    pressure: 1007.53
+    ozone: 287.35
+  - time: 1495551600
+    summary: Clear
+    icon: clear-night
+    precipIntensity: 0
+    precipProbability: 0
+    temperature: 78.51
+    apparentTemperature: 78.51
+    dewPoint: 72.27
+    humidity: 0.81
+    windSpeed: 1.58
+    windBearing: 272
+    cloudCover: 0.19
+    pressure: 1007.67
+    ozone: 287.21
+  - time: 1495555200
+    summary: Partly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.0012
+    precipProbability: 0.02
+    precipType: rain
+    temperature: 78.11
+    apparentTemperature: 78.11
+    dewPoint: 72.23
+    humidity: 0.82
+    windSpeed: 2.41
+    windBearing: 272
+    cloudCover: 0.27
+    pressure: 1007.44
+    ozone: 286.84
+  - time: 1495558800
+    summary: Partly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.0022
+    precipProbability: 0.06
+    precipType: rain
+    temperature: 77.92
+    apparentTemperature: 77.92
+    dewPoint: 72.29
+    humidity: 0.83
+    windSpeed: 3.14
+    windBearing: 271
+    cloudCover: 0.37
+    pressure: 1007.01
+    ozone: 286.37
+  - time: 1495562400
+    summary: Partly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.003
+    precipProbability: 0.1
+    precipType: rain
+    temperature: 77.85
+    apparentTemperature: 77.85
+    dewPoint: 72.45
+    humidity: 0.84
+    windSpeed: 3.63
+    windBearing: 270
+    cloudCover: 0.49
+    pressure: 1006.63
+    ozone: 285.94
+  - time: 1495566000
+    summary: Mostly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.0032
+    precipProbability: 0.11
+    precipType: rain
+    temperature: 77.85
+    apparentTemperature: 77.85
+    dewPoint: 72.76
+    humidity: 0.84
+    windSpeed: 3.72
+    windBearing: 270
+    cloudCover: 0.63
+    pressure: 1006.38
+    ozone: 285.55
+  - time: 1495569600
+    summary: Mostly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.0032
+    precipProbability: 0.11
+    precipType: rain
+    temperature: 77.96
+    apparentTemperature: 77.96
+    dewPoint: 73.15
+    humidity: 0.85
+    windSpeed: 3.58
+    windBearing: 269
+    cloudCover: 0.78
+    pressure: 1006.21
+    ozone: 285.2
+  - time: 1495573200
+    summary: Mostly Cloudy
+    icon: partly-cloudy-night
+    precipIntensity: 0.004
+    precipProbability: 0.15
+    precipType: rain
+    temperature: 78.22
+    apparentTemperature: 78.22
+    dewPoint: 73.49
+    humidity: 0.85
+    windSpeed: 3.54
+    windBearing: 266
+    cloudCover: 0.9
+    pressure: 1006.2
+    ozone: 285.04
+  - time: 1495576800
+    summary: Drizzle
+    icon: rain
+    precipIntensity: 0.0062
+    precipProbability: 0.29
+    precipType: rain
+    temperature: 78.6
+    apparentTemperature: 78.6
+    dewPoint: 73.63
+    humidity: 0.85
+    windSpeed: 3.84
+    windBearing: 260
+    cloudCover: 0.94
+    pressure: 1006.43
+    ozone: 285.22
+  - time: 1495580400
+    summary: Drizzle
+    icon: rain
+    precipIntensity: 0.0091
+    precipProbability: 0.49
+    precipType: rain
+    temperature: 79.05
+    apparentTemperature: 79.05
+    dewPoint: 73.65
+    humidity: 0.84
+    windSpeed: 4.33
+    windBearing: 253
+    cloudCover: 0.93
+    pressure: 1006.81
+    ozone: 285.58
+  - time: 1495584000
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0119
+    precipProbability: 0.53
+    precipType: rain
+    temperature: 79.62
+    apparentTemperature: 79.62
+    dewPoint: 73.73
+    humidity: 0.82
+    windSpeed: 4.57
+    windBearing: 252
+    cloudCover: 0.93
+    pressure: 1007.14
+    ozone: 285.8
+  - time: 1495587600
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0144
+    precipProbability: 0.56
+    precipType: rain
+    temperature: 80.49
+    apparentTemperature: 85.37
+    dewPoint: 73.93
+    humidity: 0.81
+    windSpeed: 4.56
+    windBearing: 259
+    cloudCover: 0.95
+    pressure: 1007.34
+    ozone: 285.71
+  - time: 1495591200
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.017
+    precipProbability: 0.58
+    precipType: rain
+    temperature: 81.43
+    apparentTemperature: 87.12
+    dewPoint: 74.12
+    humidity: 0.79
+    windSpeed: 4.46
+    windBearing: 272
+    cloudCover: 0.98
+    pressure: 1007.48
+    ozone: 285.48
+  - time: 1495594800
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.02
+    precipProbability: 0.61
+    precipType: rain
+    temperature: 81.91
+    apparentTemperature: 88.06
+    dewPoint: 74.31
+    humidity: 0.78
+    windSpeed: 4.16
+    windBearing: 293
+    cloudCover: 0.99
+    pressure: 1007.49
+    ozone: 285.23
+  - time: 1495598400
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0233
+    precipProbability: 0.63
+    precipType: rain
+    temperature: 81.25
+    apparentTemperature: 86.87
+    dewPoint: 74.23
+    humidity: 0.79
+    windSpeed: 4.58
+    windBearing: 333
+    cloudCover: 0.99
+    pressure: 1007.34
+    ozone: 284.85
+  - time: 1495602000
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0271
+    precipProbability: 0.65
+    precipType: rain
+    temperature: 79.93
+    apparentTemperature: 79.93
+    dewPoint: 73.96
+    humidity: 0.82
+    windSpeed: 7.02
+    windBearing: 2
+    cloudCover: 0.97
+    pressure: 1007.09
+    ozone: 284.45
+  - time: 1495605600
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0317
+    precipProbability: 0.67
+    precipType: rain
+    temperature: 78.42
+    apparentTemperature: 78.42
+    dewPoint: 73.3
+    humidity: 0.84
+    windSpeed: 9.34
+    windBearing: 14
+    cloudCover: 0.96
+    pressure: 1006.88
+    ozone: 284.48
+  - time: 1495609200
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0392
+    precipProbability: 0.7
+    precipType: rain
+    temperature: 76.9
+    apparentTemperature: 76.9
+    dewPoint: 72.2
+    humidity: 0.85
+    windSpeed: 10.05
+    windBearing: 20
+    cloudCover: 0.97
+    pressure: 1006.68
+    ozone: 285.35
+  - time: 1495612800
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0476
+    precipProbability: 0.72
+    precipType: rain
+    temperature: 75.55
+    apparentTemperature: 75.55
+    dewPoint: 71.1
+    humidity: 0.86
+    windSpeed: 9.9
+    windBearing: 26
+    cloudCover: 0.99
+    pressure: 1006.51
+    ozone: 286.64
+  - time: 1495616400
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0516
+    precipProbability: 0.73
+    precipType: rain
+    temperature: 74.73
+    apparentTemperature: 74.73
+    dewPoint: 70.44
+    humidity: 0.87
+    windSpeed: 9.82
+    windBearing: 32
+    cloudCover: 1
+    pressure: 1006.58
+    ozone: 287.58
+  - time: 1495620000
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0479
+    precipProbability: 0.72
+    precipType: rain
+    temperature: 74.62
+    apparentTemperature: 74.62
+    dewPoint: 70.39
+    humidity: 0.87
+    windSpeed: 10.08
+    windBearing: 38
+    cloudCover: 1
+    pressure: 1007.06
+    ozone: 287.83
+  - time: 1495623600
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.04
+    precipProbability: 0.7
+    precipType: rain
+    temperature: 74.92
+    apparentTemperature: 74.92
+    dewPoint: 70.63
+    humidity: 0.87
+    windSpeed: 10.38
+    windBearing: 44
+    cloudCover: 1
+    pressure: 1007.74
+    ozone: 287.73
+  - time: 1495627200
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0323
+    precipProbability: 0.67
+    precipType: rain
+    temperature: 75.16
+    apparentTemperature: 75.16
+    dewPoint: 70.85
+    humidity: 0.87
+    windSpeed: 10.59
+    windBearing: 47
+    cloudCover: 1
+    pressure: 1008.28
+    ozone: 287.44
+  - time: 1495630800
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0254
+    precipProbability: 0.64
+    precipType: rain
+    temperature: 75.09
+    apparentTemperature: 75.09
+    dewPoint: 70.84
+    humidity: 0.87
+    windSpeed: 10.58
+    windBearing: 48
+    cloudCover: 0.99
+    pressure: 1008.59
+    ozone: 286.97
+  - time: 1495634400
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0188
+    precipProbability: 0.6
+    precipType: rain
+    temperature: 74.77
+    apparentTemperature: 74.77
+    dewPoint: 70.62
+    humidity: 0.87
+    windSpeed: 10.41
+    windBearing: 47
+    cloudCover: 0.98
+    pressure: 1008.77
+    ozone: 286.32
+  - time: 1495638000
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0154
+    precipProbability: 0.57
+    precipType: rain
+    temperature: 74.29
+    apparentTemperature: 74.29
+    dewPoint: 70.26
+    humidity: 0.87
+    windSpeed: 10.29
+    windBearing: 45
+    cloudCover: 0.97
+    pressure: 1008.78
+    ozone: 285.73
+  - time: 1495641600
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0182
+    precipProbability: 0.59
+    precipType: rain
+    temperature: 74.14
+    apparentTemperature: 74.14
+    dewPoint: 70.26
+    humidity: 0.88
+    windSpeed: 10.33
+    windBearing: 44
+    cloudCover: 0.98
+    pressure: 1008.52
+    ozone: 285.23
+  - time: 1495645200
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0241
+    precipProbability: 0.63
+    precipType: rain
+    temperature: 73.88
+    apparentTemperature: 73.88
+    dewPoint: 70.17
+    humidity: 0.88
+    windSpeed: 10.45
+    windBearing: 42
+    cloudCover: 0.99
+    pressure: 1008.12
+    ozone: 284.78
+  - time: 1495648800
+    summary: Light Rain
+    icon: rain
+    precipIntensity: 0.0271
+    precipProbability: 0.65
+    precipType: rain
+    temperature: 73.53
+    apparentTemperature: 73.53
+    dewPoint: 69.9
+    humidity: 0.88
+    windSpeed: 10.58
+    windBearing: 39
+    cloudCover: 0.99
+    pressure: 1007.82
+    ozone: 284.56
+daily:
+  summary: Light rain tomorrow through Tuesday, with temperatures falling to 78°F
+    on Thursday.
+  icon: rain
+  data:
+  - time: 1495468800
+    summary: Partly cloudy overnight.
+    icon: partly-cloudy-night
+    sunriseTime: 1495487263
+    sunsetTime: 1495535783
+    moonPhase: 0.9
+    precipIntensity: 0.0009
+    precipIntensityMax: 0.0024
+    precipIntensityMaxTime: 1495522800
+    precipProbability: 0.07
+    precipType: rain
+    temperatureMin: 75.26
+    temperatureMinTime: 1495476000
+    temperatureMax: 86.03
+    temperatureMaxTime: 1495515600
+    apparentTemperatureMin: 75.26
+    apparentTemperatureMinTime: 1495476000
+    apparentTemperatureMax: 93.47
+    apparentTemperatureMaxTime: 1495519200
+    dewPoint: 71.99
+    humidity: 0.75
+    windSpeed: 0.08
+    windBearing: 239
+    visibility: 6.21
+    cloudCover: 0.11
+    pressure: 1007.67
+    ozone: 288.77
+  - time: 1495555200
+    summary: Light rain throughout the day.
+    icon: rain
+    sunriseTime: 1495573643
+    sunsetTime: 1495622214
+    moonPhase: 0.94
+    precipIntensity: 0.0207
+    precipIntensityMax: 0.0516
+    precipIntensityMaxTime: 1495616400
+    precipProbability: 0.73
+    precipType: rain
+    temperatureMin: 74.29
+    temperatureMinTime: 1495638000
+    temperatureMax: 81.91
+    temperatureMaxTime: 1495594800
+    apparentTemperatureMin: 74.29
+    apparentTemperatureMinTime: 1495638000
+    apparentTemperatureMax: 88.06
+    apparentTemperatureMaxTime: 1495594800
+    dewPoint: 72.44
+    humidity: 0.84
+    windSpeed: 3.71
+    windBearing: 8
+    cloudCover: 0.87
+    pressure: 1007.2
+    ozone: 285.97
+  - time: 1495641600
+    summary: Light rain until afternoon.
+    icon: rain
+    sunriseTime: 1495660025
+    sunsetTime: 1495708644
+    moonPhase: 0.97
+    precipIntensity: 0.0104
+    precipIntensityMax: 0.0271
+    precipIntensityMaxTime: 1495648800
+    precipProbability: 0.65
+    precipType: rain
+    temperatureMin: 71.46
+    temperatureMinTime: 1495666800
+    temperatureMax: 78.32
+    temperatureMaxTime: 1495692000
+    apparentTemperatureMin: 71.46
+    apparentTemperatureMinTime: 1495666800
+    apparentTemperatureMax: 78.32
+    apparentTemperatureMaxTime: 1495692000
+    dewPoint: 67.7
+    humidity: 0.81
+    windSpeed: 9.74
+    windBearing: 40
+    cloudCover: 0.77
+    pressure: 1008.97
+    ozone: 289.11
+  - time: 1495728000
+    summary: Partly cloudy until afternoon.
+    icon: partly-cloudy-day
+    sunriseTime: 1495746408
+    sunsetTime: 1495795074
+    moonPhase: 0.02
+    precipIntensity: 0.0012
+    precipIntensityMax: 0.002
+    precipIntensityMaxTime: 1495728000
+    precipProbability: 0.05
+    precipType: rain
+    temperatureMin: 70.84
+    temperatureMinTime: 1495742400
+    temperatureMax: 81.84
+    temperatureMaxTime: 1495778400
+    apparentTemperatureMin: 70.84
+    apparentTemperatureMinTime: 1495742400
+    apparentTemperatureMax: 83.31
+    apparentTemperatureMaxTime: 1495778400
+    dewPoint: 63.02
+    humidity: 0.67
+    windSpeed: 9.94
+    windBearing: 71
+    cloudCover: 0.2
+    pressure: 1010.8
+    ozone: 287.81
+  - time: 1495814400
+    summary: Partly cloudy until evening.
+    icon: partly-cloudy-day
+    sunriseTime: 1495832792
+    sunsetTime: 1495881504
+    moonPhase: 0.05
+    precipIntensity: 0.0018
+    precipIntensityMax: 0.0022
+    precipIntensityMaxTime: 1495857600
+    precipProbability: 0.06
+    precipType: rain
+    temperatureMin: 71.96
+    temperatureMinTime: 1495828800
+    temperatureMax: 83.1
+    temperatureMaxTime: 1495861200
+    apparentTemperatureMin: 71.96
+    apparentTemperatureMinTime: 1495828800
+    apparentTemperatureMax: 84.35
+    apparentTemperatureMaxTime: 1495861200
+    dewPoint: 62.96
+    humidity: 0.63
+    windSpeed: 12.35
+    windBearing: 99
+    cloudCover: 0.25
+    pressure: 1012.21
+    ozone: 285.24
+  - time: 1495900800
+    summary: Partly cloudy overnight.
+    icon: partly-cloudy-night
+    sunriseTime: 1495919177
+    sunsetTime: 1495967933
+    moonPhase: 0.09
+    precipIntensity: 0.0015
+    precipIntensityMax: 0.0022
+    precipIntensityMaxTime: 1495933200
+    precipProbability: 0.06
+    precipType: rain
+    temperatureMin: 72.66
+    temperatureMinTime: 1495915200
+    temperatureMax: 83.49
+    temperatureMaxTime: 1495951200
+    apparentTemperatureMin: 72.66
+    apparentTemperatureMinTime: 1495915200
+    apparentTemperatureMax: 86.15
+    apparentTemperatureMaxTime: 1495951200
+    dewPoint: 66.21
+    humidity: 0.68
+    windSpeed: 11.38
+    windBearing: 97
+    cloudCover: 0.02
+    pressure: 1013.08
+    ozone: 304.23
+  - time: 1495987200
+    summary: Partly cloudy until afternoon.
+    icon: partly-cloudy-day
+    sunriseTime: 1496005564
+    sunsetTime: 1496054362
+    moonPhase: 0.13
+    precipIntensity: 0.0021
+    precipIntensityMax: 0.0025
+    precipIntensityMaxTime: 1496041200
+    precipProbability: 0.07
+    precipType: rain
+    temperatureMin: 72.98
+    temperatureMinTime: 1496001600
+    temperatureMax: 84.29
+    temperatureMaxTime: 1496034000
+    apparentTemperatureMin: 72.98
+    apparentTemperatureMinTime: 1496001600
+    apparentTemperatureMax: 87.07
+    apparentTemperatureMaxTime: 1496034000
+    dewPoint: 66.42
+    humidity: 0.68
+    windSpeed: 11.26
+    windBearing: 107
+    cloudCover: 0.29
+    pressure: 1012.6
+    ozone: 298.33
+  - time: 1496073600
+    summary: Light rain throughout the day.
+    icon: rain
+    sunriseTime: 1496091951
+    sunsetTime: 1496140791
+    moonPhase: 0.16
+    precipIntensity: 0.0046
+    precipIntensityMax: 0.0104
+    precipIntensityMaxTime: 1496156400
+    precipProbability: 0.51
+    precipType: rain
+    temperatureMin: 73.07
+    temperatureMinTime: 1496088000
+    temperatureMax: 84.71
+    temperatureMaxTime: 1496120400
+    apparentTemperatureMin: 73.07
+    apparentTemperatureMinTime: 1496088000
+    apparentTemperatureMax: 88.7
+    apparentTemperatureMaxTime: 1496120400
+    dewPoint: 68.75
+    humidity: 0.72
+    windSpeed: 7.5
+    windBearing: 109
+    cloudCover: 0.06
+    pressure: 1011.05
+    ozone: 297.47
+flags:
+  sources:
+  - gfs
+  - cmc
+  - fnmoc
+  - isd
+  - madis
+  isd-stations:
+  - 466860-99999
+  - 466900-99999
+  - 466920-99999
+  - 466940-99999
+  - 466960-99999
+  - 466970-99999
+  - 467060-99999
+  - 467080-99999
+  - 467380-99999
+  - 467640-99999
+  - 467690-99999
+  - 589650-99999
+  - 589680-99999
+  - 589690-99999
+  - 591520-99999
+  - 591530-99999
+  madis-stations:
+  - C6LG6
+  - D5432
+  - RCSS
+  - RCTP
+  units: us
