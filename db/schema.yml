@@ -1,5 +1,7 @@
 ---
 daily:
+  city                        : string
+  entered_at                  : timestamp
   latitude                    : float
   longitude                   : float
   offset                      : float
@@ -32,7 +34,10 @@ daily:
   cloudCover                  : float
   pressure                    : float
   ozone                       : float
+
 hourly:
+  city                        : string
+  entered_at                  : timestamp
   latitude                    : float
   longitude                   : float
   offset                      : float

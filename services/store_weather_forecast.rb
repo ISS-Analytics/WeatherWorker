@@ -7,6 +7,8 @@ class StoreWeatherForecast
   end
 
   # Setup Service
+  # parameters:
+  #   forecasts: single hash or array of hashes
   # example:
   #   repo = WeatherRepo.new(config: app.settings.config)
   #   forecast = StoreWeatherForecast.new(repo).call(forecasts)
@@ -15,10 +17,6 @@ class StoreWeatherForecast
       @repo.use_table(table)
       result = @repo.save(all_forecasts[table])
       yield(table, all_forecasts, result) if block_given?
-      # all_forecasts[table].each do |forecast|
-      #   result = @repo.save(forecast)
-      #   yield(table, forecast, result) if block_given?
-      # end
     end
   end
 end

@@ -13,7 +13,7 @@ class WeatherRepo
   # Setup connection to repo with either configured or specified parameters
   #  e.g., repo = WeatherRepo.new(config: app.settings.config)
   #        repo = WeatherRepo.new(project: 'prj', dataset: 'dset', table: 'tab')
-  def initialize(project: nil, dataset: nil)
+  def initialize(project: nil, dataset: nil, table: nil)
     @project = Google::Cloud::Bigquery.new(project: project) if project
     @dataset = @project.dataset(dataset) if dataset
     @table = @dataset.table(table) if table

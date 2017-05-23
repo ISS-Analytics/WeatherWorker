@@ -12,7 +12,7 @@ configure :development, :test do
     BIGQUERY_KEYFILE = "#{File.dirname(__FILE__)}/bigquery_keyfile.json".freeze
     ENV['BIGQUERY_KEYFILE_JSON'] = File.read(BIGQUERY_KEYFILE)
   rescue => e
-    puts 'Place BigQuery keyfile in config/ folder as bigquery_keyfile.json'
+    puts 'Place BigQuery keyfile in config/bigquery_keyfile.json'
     puts e.inspect
   end
 end

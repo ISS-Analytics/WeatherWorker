@@ -17,7 +17,8 @@ class WeatherOracle
 
   Location = Types::Hash.symbolized(
     longitude: Types::Coercible::Float,
-    latitude: Types::Coercible::Float
+    latitude: Types::Coercible::Float,
+    loc_id: Types::Coercible::String
   )
 
   module Error
@@ -43,6 +44,8 @@ class WeatherOracle
     location = Location.call(location_hash)
     loc = [location[:latitude], location[:longitude]].join(',')
     api_endpoint = [@route, loc].join('/')
-    JSON.parse(HTTP.get(api_endpoint).body)
+    forecast = JSON.parse(HTTP.get(api_endpoint).body)
+    forecast['city'] = location[:loc_id]
+    forecast
   end
 end

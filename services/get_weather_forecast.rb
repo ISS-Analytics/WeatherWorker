@@ -12,7 +12,7 @@ class GetWeatherForecast
   #                  {latitude: '12.21', longitude: '121.21'}
   #                  {'latitude' => 12.21, 'longitude' => 121.21 }
   # Example:
-  #   oracle = WeatherOracle.new(app.settings.config.DARKSKY_API_KEY)
+  #   oracle = WeatherOracle.new(api_key: app.settings.config.DARKSKY_API_KEY)
   #   forecast = GetWeatherForecast.new(oracle)
   #                                .call(app.settings.config.LOCATIONS.first)
   def call(location_hash)
@@ -28,7 +28,8 @@ class GetWeatherForecast
     daily_hourly.each do |_, time_forecast|
       time_forecast['data'].each.with_index do |forecast, index|
         forecast['ahead'] = index
-        copy_over(forecasts, forecast, %w[latitude longitude timezone offset])
+        forecast['entered_at'] = Time.now.to_i
+        copy_over(forecasts, forecast, %w[latitude longitude timezone offset city])
       end
     end
 
