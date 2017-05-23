@@ -6,11 +6,19 @@ class StoreWeatherForecast
     @repo = repo
   end
 
+  # Setup Service
+  # example:
+  #   repo = WeatherRepo.new(config: app.settings.config)
+  #   forecast = StoreWeatherForecast.new(repo).call(forecasts)
   def call(all_forecasts)
     all_forecasts.keys.each do |table|
-      all_forecasts[table].each do |forecast|
-        @repo.save(table, forecast)
-      end
+      @repo.use_table(table)
+      result = @repo.save(all_forecasts[table])
+      yield(table, all_forecasts, result) if block_given?
+      # all_forecasts[table].each do |forecast|
+      #   result = @repo.save(forecast)
+      #   yield(table, forecast, result) if block_given?
+      # end
     end
   end
 end

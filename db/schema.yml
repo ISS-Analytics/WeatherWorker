@@ -44,6 +44,8 @@ hourly:
   precipIntensity             : float
   precipProbability           : float
   precipType                  : string
+  temperature                 : float
+  apparentTemperature         : float
   dewPoint                    : float
   humidity                    : float
   windSpeed                   : float

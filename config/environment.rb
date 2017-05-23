@@ -7,8 +7,12 @@ configure :development do
   end
 end
 
-configure do
-  DB_SCHEMA = YAML.safe_load(
-    File.read("#{File.dirname(__FILE__)}/../db/schema.yml")
-  )
+configure :development, :test do
+  begin
+    BIGQUERY_KEYFILE = "#{File.dirname(__FILE__)}/bigquery_keyfile.json".freeze
+    ENV['BIGQUERY_KEYFILE_JSON'] = File.read(BIGQUERY_KEYFILE)
+  rescue => e
+    puts 'Place BigQuery keyfile in config/ folder as bigquery_keyfile.json'
+    puts e.inspect
+  end
 end

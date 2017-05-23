@@ -1,5 +1,9 @@
 ---
 development:
+  BIGQUERY_PROJECT: weather-weaver
+  BIGQUERY_DATASET: dev_forecasts
+  BIGQUERY_DAILY_TABLE: daily
+  BIGQUERY_HOURLY_TABLE: hourly
   LOCATIONS:
     - loc_id: TPE1
       latitude: 25.0402779
@@ -7,7 +11,25 @@ development:
     - loc_id: KH2
       latitude: 22.6630247
       longitude: 120.3114376
+
+test:
+  BIGQUERY_PROJECT: weather-weaver
+  BIGQUERY_DATASET: test_forecasts
+  BIGQUERY_DAILY_TABLE: daily
+  BIGQUERY_HOURLY_TABLE: hourly
+  LOCATIONS:
+  - loc_id: TPE1
+    latitude: 25.0402779
+    longitude: 121.5301837
+  - loc_id: KH2
+    latitude: 22.6630247
+    longitude: 120.3114376
+
 production:
+  BIGQUERY_PROJECT: weather-weaver
+  BIGQUERY_DATASET: forecasts
+  BIGQUERY_DAILY_TABLE: daily
+  BIGQUERY_HOURLY_TABLE: hourly
   LOCATIONS:
     - loc_id: TPE1
       latitude: 25.0402779
