@@ -13,6 +13,11 @@ gem 'econfig'
 gem 'puma'
 gem 'sinatra'
 
+group :development, :production do
+  gem 'rake'
+  gem 'tux'
+end
+
 group :test do
   gem 'minitest'
   gem 'minitest-rg'

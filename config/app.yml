@@ -8,7 +8,7 @@ development:
     - loc_id: TAIPEI-1
       latitude: 25.0402779
       longitude: 121.5301837
-    - loc_id: KH2
+    - loc_id: KAOHSIUNG-2
       latitude: 22.6630247
       longitude: 120.3114376
 
