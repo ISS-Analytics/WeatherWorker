@@ -13,12 +13,16 @@ class WeatherRepo
   # Setup connection to repo with either configured or specified parameters
   #  e.g., repo = WeatherRepo.new(config: app.settings.config)
   #        repo = WeatherRepo.new(project: 'prj', dataset: 'dset', table: 'tab')
-  def initialize(project:, dataset:, table:)
+  def initialize(project: nil, dataset: nil)
     @project = Google::Cloud::Bigquery.new(project: project) if project
     @dataset = @project.dataset(dataset) if dataset
     @table = @dataset.table(table) if table
   rescue
     raise Error::NoConnection, 'Could not connect to BigQuery'
+  end
+
+  def use_table(table)
+    @table = @dataset.table(table)
   end
 
   # Streaming save to BigQuery
@@ -32,17 +36,14 @@ class WeatherRepo
   def create_dataset(dataset)
     raise NoConection unless @project
     @dataset = @project.create_dataset dataset
-    @dataset.tap { |d| puts "Dataset #{d.dataset_id} created." }
   end
 
-  def create_table(table)
+  def create_table(table_name, table_schema)
     raise NoConection unless @dataset
-    @table = @dataset.create_table table do |schema|
-      DB_SCHEMA[table].each do |name, type|
+    @table = @dataset.create_table table_name do |schema|
+      table_schema.each do |name, type|
         schema.send(type, name)
       end
     end
-
-    @table.tap { |t| puts "Table #{t.table_id} created." }
   end
 end
